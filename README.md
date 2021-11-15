@@ -1,2 +1,20 @@
 # mid_bootcamp_project
-This is for the midbootcamp project
+----------
+
+
+## Scenario
+*
+
+
+
+
+## Process + Tools
+*
+*
+*
+
+## Take Aways
+*
+*
+
+#### Thanks
