@@ -112,6 +112,12 @@ GROUP BY waterfront;
 #Is there any correlation between the columns condition and grade? 
 #You can analyse this by grouping the data by one of the variables and then aggregating the results of the other column.
 #Visually check if there is a positive correlation or negative correlation or no correlation between the variables.
+SELECT 
+    house_condition, grade
+FROM
+    house_price_data
+GROUP BY house_condition , grade
+ORDER BY house_condition;
 
 #One of the customers is only interested in the following houses:
 #Number of bedrooms either 3 or 4
