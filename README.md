@@ -3,9 +3,18 @@
 
 
 # Scenario
+*
+
+
+
 
 # Process + Tools
+*
+*
+*
 
 # Take Aways
+*
+*
 
 #### Thanks
