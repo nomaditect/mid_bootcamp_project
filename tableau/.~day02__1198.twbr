@@ -22,7 +22,6 @@
     <SortTagCleanup />
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
-    <ZoneBackgroundTransparency />
   </document-format-change-manifest>
   <repository-location id='Regression_16369818558310' path='/workbooks' revision='1.2' />
   <preferences>
@@ -2082,8 +2081,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.04854ki1ow3so212ikgdq1bw58nh].[Longitude (generated)]' field-type='quantitative' max='-13438431.748501645' min='-13712843.771681266' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.04854ki1ow3so212ikgdq1bw58nh].[Latitude (generated)]' field-type='quantitative' max='6092875.2084629033' min='5893103.259644486' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.04854ki1ow3so212ikgdq1bw58nh].[Longitude (generated)]' field-type='quantitative' max='-13482880.703144306' min='-13652303.202283613' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.04854ki1ow3so212ikgdq1bw58nh].[Latitude (generated)]' field-type='quantitative' max='6099313.0768312113' min='5895395.5426601702' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' center='385000.0' field='[federated.04854ki1ow3so212ikgdq1bw58nh].[avg:price:qk]' max='1500000.0' min='100000.0' num-steps='14' palette='orange_blue_diverging_10_0' reverse='true' type='interpolated' />
@@ -2743,206 +2742,44 @@
       </table>
       <simple-id uuid='{56E50453-7CDD-4607-8327-378DADBCBC27}' />
     </worksheet>
+    <worksheet name='Sheet 23'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='regression_data1 (regression_data)' name='federated.04854ki1ow3so212ikgdq1bw58nh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04854ki1ow3so212ikgdq1bw58nh'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.04854ki1ow3so212ikgdq1bw58nh].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04854ki1ow3so212ikgdq1bw58nh].[none:id:ok]</rows>
+        <cols>[federated.04854ki1ow3so212ikgdq1bw58nh].[sum:price:qk]</cols>
+      </table>
+      <simple-id uuid='{D92221F7-63FD-41BD-A907-E9595713AE04}' />
+    </worksheet>
   </worksheets>
   <dashboards>
-    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='10.'>
-      <style />
-      <size sizing-mode='automatic' />
-      <datasources>
-        <datasource caption='regression_data1 (regression_data)' name='federated.04854ki1ow3so212ikgdq1bw58nh' />
-      </datasources>
-      <datasource-dependencies datasource='federated.04854ki1ow3so212ikgdq1bw58nh'>
-        <column aggregation='Sum' caption='Bedrooms' datatype='integer' name='[bedrooms]' role='dimension' type='ordinal' />
-        <column-instance column='[bedrooms]' derivation='None' name='[none:bedrooms:ok]' pivot='key' type='ordinal' />
-      </datasource-dependencies>
-      <zones>
-        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98232' id='9' param='horz' type-v2='layout-flow' w='98910' x='545' y='884'>
-            <zone h='98232' id='7' type-v2='layout-basic' w='88018' x='545' y='884'>
-              <zone h='49116' id='5' name='$/Bed' w='29407' x='545' y='884'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='49116' id='12' name='$/Bath' w='36607' x='29952' y='884'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='49116' id='13' name='$/Condition' w='22004' x='66559' y='884'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='49116' id='14' name='$/Floors' w='29407' x='545' y='50000'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='49116' id='15' name='$/Grade' w='36607' x='29952' y='50000'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='49116' id='16' name='$/View' w='22004' x='66559' y='50000'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-            </zone>
-            <zone fixed-size='160' h='98232' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='10892' x='88563' y='884'>
-              <zone h='30829' id='10' name='$/Bed' param='[federated.04854ki1ow3so212ikgdq1bw58nh].[none:bedrooms:ok]' type-v2='filter' w='10892' x='88563' y='884'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='7182' id='11' name='$/Bed' pane-specification-id='0' param='[federated.04854ki1ow3so212ikgdq1bw58nh].[avg:price:qk]' type-v2='color' w='10892' x='88563' y='31713'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='7293' id='17' name='$/View' pane-specification-id='0' param='[federated.04854ki1ow3so212ikgdq1bw58nh].[none:waterfront:ok]' type-v2='color' w='10892' x='88563' y='38895'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-            </zone>
-          </zone>
-          <zone-style>
-            <format attr='border-color' value='#000000' />
-            <format attr='border-style' value='none' />
-            <format attr='border-width' value='0' />
-            <format attr='margin' value='8' />
-          </zone-style>
-        </zone>
-      </zones>
-      <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
-          <zones>
-            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98232' id='22' param='vert' type-v2='layout-flow' w='98910' x='545' y='884'>
-                <zone h='30829' id='10' mode='checkdropdown' name='$/Bed' param='[federated.04854ki1ow3so212ikgdq1bw58nh].[none:bedrooms:ok]' type-v2='filter' w='10892' x='88563' y='884'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='49116' id='5' is-fixed='true' name='$/Bed' w='29407' x='545' y='884'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='7182' id='11' name='$/Bed' pane-specification-id='0' param='[federated.04854ki1ow3so212ikgdq1bw58nh].[avg:price:qk]' type-v2='color' w='10892' x='88563' y='31713'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='49116' id='12' is-fixed='true' name='$/Bath' w='36607' x='29952' y='884'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='49116' id='13' is-fixed='true' name='$/Condition' w='22004' x='66559' y='884'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='49116' id='14' is-fixed='true' name='$/Floors' w='29407' x='545' y='50000'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='49116' id='15' is-fixed='true' name='$/Grade' w='36607' x='29952' y='50000'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone fixed-size='280' h='49116' id='16' is-fixed='true' name='$/View' w='22004' x='66559' y='50000'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-                <zone h='7293' id='17' name='$/View' pane-specification-id='0' param='[federated.04854ki1ow3so212ikgdq1bw58nh].[none:waterfront:ok]' type-v2='color' w='10892' x='88563' y='38895'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                    <format attr='padding' value='0' />
-                  </zone-style>
-                </zone>
-              </zone>
-              <zone-style>
-                <format attr='border-color' value='#000000' />
-                <format attr='border-style' value='none' />
-                <format attr='border-width' value='0' />
-                <format attr='margin' value='8' />
-              </zone-style>
-            </zone>
-          </zones>
-        </devicelayout>
-      </devicelayouts>
-      <simple-id uuid='{8E23DEDF-2CDE-471E-AA52-606924FF82EA}' />
-    </dashboard>
     <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
       <style>
         <style-rule element='dash-text'>
@@ -2985,14 +2822,14 @@
             <run fontalignment='2' fontsize='12'>by Grade</run>
           </formatted-text>
         </zone>
-        <zone h='73923' id='11' name='4.map' show-title='false' w='38666' x='60926' y='25083' />
-        <zone h='6298' id='13' name='4.map' pane-specification-id='0' param='[federated.04854ki1ow3so212ikgdq1bw58nh].[avg:price:qk]' type-v2='color' w='9530' x='61130' y='90829' />
-        <zone h='73812' id='14' name='AVG(PRICE)/ZIP' show-title='false' w='8509' x='52417' y='25193' />
+        <zone h='73923' id='11' name='4.map' show-title='false' w='37849' x='61743' y='25083' />
+        <zone h='6298' id='13' name='4.map' pane-specification-id='0' param='[federated.04854ki1ow3so212ikgdq1bw58nh].[avg:price:qk]' type-v2='color' w='9530' x='62083' y='90829' />
+        <zone h='73812' id='14' name='AVG(PRICE)/ZIP' show-title='false' w='9054' x='52417' y='25193' />
         <zone h='25193' id='15' name='3.1 $/SqftABV' show-title='false' w='15657' x='35330' y='24751' />
         <zone h='25193' id='20' name='3.2  $/SqftBase' show-title='false' w='15521' x='35330' y='49945' />
         <zone h='24530' id='21' name='3.3 $/SqftLiv' show-title='false' w='15793' x='35194' y='331' />
         <zone h='25304' id='22' name='3.4$/SqfLot15' show-title='false' w='15248' x='35875' y='74254' />
-        <zone forceUpdate='true' h='64751' id='23' type-v2='text' w='3063' x='57794' y='36133'>
+        <zone forceUpdate='true' h='64751' id='23' type-v2='text' w='3063' x='49898' y='28840'>
           <formatted-text>
             <run bold='true' fontname='Tableau Medium' fontsize='26'>Average Housing Price </run>
             <run fontname='Tableau Medium' fontsize='26'>by Zipcode</run>
@@ -3323,7 +3160,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='dashboard' name='Dashboard 2'>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
       <viewpoints>
         <viewpoint name='$/Bath' />
         <viewpoint name='$/Bed' />
@@ -3360,7 +3197,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='11' />
+      <active id='23' />
       <grid grid-overlay-mode='on' grid-size='50' />
       <simple-id uuid='{561363CA-3C0E-4168-B7BA-0FBBEA55EDD3}' />
     </window>
@@ -3957,30 +3794,6 @@
       </cards>
       <simple-id uuid='{49B53349-45CE-4647-91C9-B6218A2EE954}' />
     </window>
-    <window class='dashboard' maximized='true' name='10.'>
-      <viewpoints>
-        <viewpoint name='$/Bath'>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='$/Bed'>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='$/Condition'>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='$/Floors'>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='$/Grade'>
-          <zoom type='entire-view' />
-        </viewpoint>
-        <viewpoint name='$/View'>
-          <zoom type='entire-view' />
-        </viewpoint>
-      </viewpoints>
-      <active id='6' />
-      <simple-id uuid='{B5397074-F3C1-4871-A627-320F0DD3F93F}' />
-    </window>
     <window class='worksheet' name='10yrBuilds'>
       <cards>
         <edge name='left'>
@@ -4016,6 +3829,29 @@
         <default-map-tool-selection tool='1' />
       </viewpoint>
       <simple-id uuid='{4166250E-F84A-435C-924C-739C2CD3A2D4}' />
+    </window>
+    <window class='worksheet' name='Sheet 23'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4C4FCBAE-A937-4640-92A9-E8F3DB251718}' />
     </window>
   </windows>
 </workbook>
