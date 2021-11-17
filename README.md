@@ -11,11 +11,11 @@ Using the [data provided](https://github.com/ironhack-edu/data_mid_bootcamp_proj
 
 ## Index
 - [Tools](https://github.com/nomaditect/mid_bootcamp_project#tools)
-- [Proccess](https://github.com/nomaditect/mid_bootcamp_project#Proccess)
+- [Proccess](https://github.com/nomaditect/mid_bootcamp_project#proccess)
 - [EDA](https://github.com/nomaditect/mid_bootcamp_project#EDA)
-- [Model](https://github.com/nomaditect/mid_bootcamp_project#Model)
-- [Outcomes](https://github.com/nomaditect/mid_bootcamp_project#Outcomes)
-- [Possible Next Steps](https://github.com/nomaditect/mid_bootcamp_project#Possible-Next-Steps)
+- [Model](https://github.com/nomaditect/mid_bootcamp_project#model)
+- [Outcomes](https://github.com/nomaditect/mid_bootcamp_project#outcomes)
+- [Possible Next Steps](https://github.com/nomaditect/mid_bootcamp_project#possible-next-steps)
 
 
 ### Tools
@@ -29,18 +29,20 @@ General process followed for the whole project:
 
 - Github: Our first step was setting the repo for collabs and data uploading
 - Notion: To keep track of our tasks and add/remove relevant information
-- Jupiter Notebook: We analyzed the whole data with Python following these steps:
+- Jupiter Notebook: We analyzed and cleaned the whole dataset with Python and ran 4 models with different approaches.
 
 
-### Model
-- First Try - Without preprocessing. We ran Linear Regression and KNN
-- Second Try - Using StandardScaler on numeric columns and GetDummies on categoricals. We ran Linear Regression and KNN
-- Third Try - Removing all the outliers. Using StandardScaler on numeric columns and GetDummies on categoricals. We ran Linear Regression and KNN
-- Fourth Try
+### Models
+We ran 4 iterations with different feature selection but always with the same 4 models: **Linear Regression, KNN, Decision Tree & Random Forest**
+- First Try - Using Raw Data (without any further processing)
+- Second Try - Using StandardScaler on numeric columns and GetDummies on categoricals
+- Third Try - Removing all the outliers
+- Fourth Try - Using 'obvious' data, we used the number of bedrooms, of floors, the square meters of the lot, the condition of the house and, of course, the price.
 
 
 ### Outcomes
 Our best fit model was a Linear Regression having pre-processed using StandardScaler on numeric columns and GetDummies on categoricals, we achieved an accuracy of 69%
+On the other hand our KNN model performed better when we removed all the outliers, but still only reached an accuracy of 60%
 
 
 ### Possible Next Steps
@@ -49,4 +51,4 @@ Other suggestions we came up with was also adding more relevant data regarding l
 
 -------
 
-thanks for stoping by 🍩
+thanks for stoping by, have a donut 🍩
