@@ -1,4 +1,5 @@
-# Mid Bootcamp Project: Predicting house pricing based on specific features
+# Mid Bootcamp Project: 
+# Predicting house pricing based on specific features
 
 By Deep-South ([Simon Stewart](https://github.com/nomaditect/) & [Yamila Rodriguez Terán](https://github.com/yamilart/))
 
