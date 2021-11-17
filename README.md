@@ -3,19 +3,19 @@
 
 ## Predicting house pricing based on specific features
 
-By Deep-South ([Simon Stewart](https://github.com/nomaditect/) & [Yamila Rodriguez Terán](https://github.com/yamilart/))
+By Deep-South [Yamila Rodriguez Terán](https://github.com/yamilart/)) & ([Simon Stewart](https://github.com/nomaditect/)
 
 ## Scenario
 Using the [data provided](https://github.com/ironhack-edu/data_mid_bootcamp_project_regression) we had to work as analysts for a real estate company that wants to build a machine learning model to **predict the selling prices of houses based on a variety of features** on which the value of the house is evaluated.
 
 
 ## Index
-- Tools
-- Proccess
-- EDA
-- Model
-- Outcomes
-- Possible Next Steps
+- [Tools](https://github.com/nomaditect/mid_bootcamp_project#tools)
+- [Proccess](https://github.com/nomaditect/mid_bootcamp_project#Proccess)
+- [EDA](https://github.com/nomaditect/mid_bootcamp_project#EDA)
+- [Model](https://github.com/nomaditect/mid_bootcamp_project#Model)
+- [Outcomes](https://github.com/nomaditect/mid_bootcamp_project#Outcomes)
+- [Possible Next Steps](https://github.com/nomaditect/mid_bootcamp_project#Possible-Next-Steps)
 
 
 ### Tools
