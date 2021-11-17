@@ -1,7 +1,6 @@
 # Tableau Activity: Regression
 
-We needed to solve some questions about our [dataset](https://github.com/nomaditect/mid_bootcamp_project/tree/main/datasets) with Tableau for the project
-You can donwload the Tableau [here](https://github.com/nomaditect/mid_bootcamp_project/tree/main/datasets) or check it out [here](https://public.tableau.com/app/profile/simon.stewart/viz/Regression_16369818558310/Dashboard2#1) without having to download it.
+We needed to solve some questions about our [dataset](https://github.com/nomaditect/mid_bootcamp_project/tree/main/datasets) with Tableau for the project. You can download the Tableau [here](https://github.com/nomaditect/mid_bootcamp_project/tree/main/datasets) or check it out [here](https://public.tableau.com/app/profile/simon.stewart/viz/Regression_16369818558310/Dashboard2#1) without having to download it.
 
 ## Questions:
 
