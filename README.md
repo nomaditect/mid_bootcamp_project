@@ -46,3 +46,7 @@ Our best fit model was a Linear Regression having pre-processed using StandardSc
 ### Possible Next Steps
 We definitely need to redo the EDA and handle the data in some other way. Maybe by using also columns we discarded at the begining like `date`, `lat`, `long`.
 Other suggestions we came up with was also adding more relevant data regarding location for example, like metro stations, or some city highlights, to be able to have more features for a more accurate model (hopefully).
+
+-------
+
+thanks for stoping by 🍩
