@@ -3,7 +3,7 @@
 
 ## Predicting house pricing based on specific features
 
-By Deep-South [Yamila Rodriguez Terán](https://github.com/yamilart/)) & ([Simon Stewart](https://github.com/nomaditect/)
+by [Yamila Rodriguez Terán](https://github.com/yamilart/) & [Simon Stewart](https://github.com/nomaditect/) aka Deep-South , Nov 2021
 
 ## Scenario
 Using the [data provided](https://github.com/ironhack-edu/data_mid_bootcamp_project_regression) we had to work as analysts for a real estate company that wants to build a machine learning model to **predict the selling prices of houses based on a variety of features** on which the value of the house is evaluated.
