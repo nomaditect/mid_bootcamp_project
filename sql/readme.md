@@ -1,6 +1,7 @@
 # MySQL Activity: Regression
 
 We needed to create some queries about our [dataset](https://github.com/nomaditect/mid_bootcamp_project/tree/main/datasets) with MySQL for the project
+You can find our solutions [here](https://github.com/nomaditect/mid_bootcamp_project/blob/main/sql/queries_regression_data.sql)
 
 # Questions
 
