@@ -18,14 +18,15 @@ Using the [data provided](https://github.com/ironhack-edu/data_mid_bootcamp_proj
 - [Outcomes](https://github.com/nomaditect/mid_bootcamp_project#outcomes)
 - [Possible Next Steps](https://github.com/nomaditect/mid_bootcamp_project#possible-next-steps)
 
+---
 
-### Tools
+## Tools
 - For the particular queries we were asked about we worked with [SQL](https://github.com/nomaditect/mid_bootcamp_project/tree/main/sql)
 - To understand which factors are responsible for higher property value - $650K and above, we used [Tableau](https://github.com/nomaditect/mid_bootcamp_project/tree/main/tableau)
 - For the EDA, wranging, pre-processing and ML Modelling with used [Python](https://github.com/nomaditect/mid_bootcamp_project/tree/main/code)(from Jupiter Notebook)
 
 
-### Process
+## Process
 General process followed for the whole project:
 
 - **Github:** Our first step was setting the repo for collabs and data uploading
@@ -33,14 +34,14 @@ General process followed for the whole project:
 - **Jupiter Notebook:** We analyzed and cleaned the whole dataset with Python and ran 4 models with different approaches.
 
 
-### EDA
+## EDA
 We visually analized the data to decided with which features (columns) we were going to be working and which ones we were going to drop.  
 We splitted the data into categoricals and numericals to deal with the difference in numbers, used correlation matrix, checked for outliers and typos and finally choose the columns to work with in each iteration  
 <img width="583" src="https://user-images.githubusercontent.com/81629326/142399396-65626b3f-eba3-4683-b8ec-936280f82aa1.jpg">
 
 
 
-### Models
+## Models
 We ran 4 iterations with different feature selection but always with the same 4 models:   
 **Linear Regression, KNN, Decision Tree & Random Forest** (last two only out of curiosity, not really part of our research)  
 - **First Try** - Using Raw Data (without any further processing)  
@@ -62,12 +63,12 @@ Our best fit was **Linear Regression with 60% accuracy**
 <img width="378" alt="Screenshot 2021-11-18 at 11 30 05" src="https://user-images.githubusercontent.com/81629326/142398782-98df88d7-a0ac-41f7-8746-e1ff122b3bbf.png">
 
 
-### Outcomes
+## Outcomes
 Our best fit model was a Linear Regression having pre-processed using StandardScaler on numeric columns and GetDummies on categoricals, we achieved an accuracy of 69%  
 <img width="583" alt="Screenshot 2021-11-18 at 09 14 46" src="https://user-images.githubusercontent.com/81629326/142398900-f5e33808-2e33-4f45-ad99-9bbda178f252.png">
 
 
-### Possible Next Steps
+## Possible Next Steps
 We definitely need to redo the EDA and handle the data in some other way. Maybe by using also columns we discarded at the begining like `date`, `lat`, `long`.
 Other suggestions we came up with was also adding more relevant data regarding location for example, like metro stations, or some city highlights, to be able to have more features for a more accurate model (hopefully).
 
