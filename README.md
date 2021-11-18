@@ -1,5 +1,6 @@
 # Mid-bootcamp Project_Regression
-![16402-3](https://user-images.githubusercontent.com/81629326/142200377-dd6df1a3-f40b-4d85-9923-abe1201459c0.jpg)
+<img src="https://user-images.githubusercontent.com/44263926/142408118-88d290be-96e0-4d12-822c-28e0fdcb5ef3.jpg" width="500" height="300">
+
 
 ## Predicting house pricing based on specific features
 
