@@ -43,20 +43,20 @@ We splitted the data into categoricals and numericals to deal with the differenc
 ### Models
 We ran 4 iterations with different feature selection but always with the same 4 models:   
 **Linear Regression, KNN, Decision Tree & Random Forest** (last two only out of curiosity, not really part of our research)  
-- First Try - Using Raw Data (without any further processing)  
+- **First Try** - Using Raw Data (without any further processing)  
 Our best fit was **Linear Regression with 65% accuracy**  
 <img width="369" alt="Screenshot 2021-11-18 at 11 29 31" src="https://user-images.githubusercontent.com/81629326/142398699-22c8f3f5-34f7-45f9-a612-ba303331fa7f.png">
 
-- Second Try - Using StandardScaler on numeric columns and GetDummies on categoricals  
+- **Second Try** - Using StandardScaler on numeric columns and GetDummies on categoricals  
 This was out best iteration  
 Our best fit was **Linear Regression with 69% accuracy**  
 <img width="374" alt="Screenshot 2021-11-18 at 11 29 43" src="https://user-images.githubusercontent.com/81629326/142398723-be6d725a-ded1-4361-bf17-78cd0c209aab.png">
 
-- Third Try - Removing all the outliers  
+- **Third Try** - Removing all the outliers  
 In this case out best fit was **KNN with 61% accuracy**  
 <img width="377" alt="Screenshot 2021-11-18 at 11 29 54" src="https://user-images.githubusercontent.com/81629326/142398746-d24fb4ab-e1fb-4607-b35a-be107942dcc2.png">
 
-- Fourth Try - Using 'obvious' data, we used the number of bedrooms, of floors, the square meters of the lot, the condition of the house and, of course, the price  
+- **Fourth Try** - Using 'obvious' data, we used the number of bedrooms, of floors, the square meters of the lot, the condition of the house and, of course, the price  
 Our worst iteration  
 Our best fit was **Linear Regression with 60% accuracy**  
 <img width="378" alt="Screenshot 2021-11-18 at 11 30 05" src="https://user-images.githubusercontent.com/81629326/142398782-98df88d7-a0ac-41f7-8746-e1ff122b3bbf.png">
