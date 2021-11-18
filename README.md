@@ -1,4 +1,4 @@
-# Mid-bootcamp Project_Regression
+# Mid Bootcamp Project: Regression
 <img src="https://user-images.githubusercontent.com/44263926/142408118-88d290be-96e0-4d12-822c-28e0fdcb5ef3.jpg" width="500" height="300">
 
 
