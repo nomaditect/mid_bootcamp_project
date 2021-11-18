@@ -18,6 +18,7 @@ Using the [data provided](https://github.com/ironhack-edu/data_mid_bootcamp_proj
 - [Outcomes](https://github.com/nomaditect/mid_bootcamp_project#outcomes)
 - [Possible Next Steps](https://github.com/nomaditect/mid_bootcamp_project#possible-next-steps)
 
+---
 
 ### Tools
 - For the particular queries we were asked about we worked with [SQL](https://github.com/nomaditect/mid_bootcamp_project/tree/main/sql)
